@@ -1082,5 +1082,1145 @@
       "habilidades": ["Air Lock"]
     },
     "evolucao": "N/A"
+  },
+  {
+    "id": 12,
+    "nome": "Butterfree",
+    "tipo": ["Inseto", "Voador"],
+    "estatisticas_base": {
+      "hp": 60,
+      "ataque": 45,
+      "defesa": 50,
+      "ataque_especial": 90,
+      "defesa_especial": 80,
+      "velocidade": 70
+    },
+    "perfil": {
+      "altura": "1.1 m",
+      "peso": "32.0 kg",
+      "habilidades": ["Compound Eyes", "Tinted Lens"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 15,
+    "nome": "Beedrill",
+    "tipo": ["Inseto", "Venenoso"],
+    "estatisticas_base": {
+      "hp": 65,
+      "ataque": 90,
+      "defesa": 40,
+      "ataque_especial": 45,
+      "defesa_especial": 80,
+      "velocidade": 75
+    },
+    "perfil": {
+      "altura": "1.0 m",
+      "peso": "29.5 kg",
+      "habilidades": ["Swarm", "Sniper"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 37,
+    "nome": "Vulpix",
+    "tipo": ["Fogo"],
+    "estatisticas_base": {
+      "hp": 38,
+      "ataque": 41,
+      "defesa": 40,
+      "ataque_especial": 50,
+      "defesa_especial": 65,
+      "velocidade": 65
+    },
+    "perfil": {
+      "altura": "0.6 m",
+      "peso": "9.9 kg",
+      "habilidades": ["Flash Fire", "Drought"]
+    },
+    "evolucao": "Ninetales"
+  },
+  {
+    "id": 41,
+    "nome": "Zubat",
+    "tipo": ["Venenoso", "Voador"],
+    "estatisticas_base": {
+      "hp": 40,
+      "ataque": 45,
+      "defesa": 35,
+      "ataque_especial": 30,
+      "defesa_especial": 40,
+      "velocidade": 55
+    },
+    "perfil": {
+      "altura": "0.8 m",
+      "peso": "7.5 kg",
+      "habilidades": ["Inner Focus", "Infiltrator"]
+    },
+    "evolucao": "Golbat"
+  },
+  {
+    "id": 50,
+    "nome": "Diglett",
+    "tipo": ["Terrestre"],
+    "estatisticas_base": {
+      "hp": 10,
+      "ataque": 55,
+      "defesa": 25,
+      "ataque_especial": 35,
+      "defesa_especial": 45,
+      "velocidade": 95
+    },
+    "perfil": {
+      "altura": "0.2 m",
+      "peso": "0.8 kg",
+      "habilidades": ["Sand Veil", "Arena Trap"]
+    },
+    "evolucao": "Dugtrio"
+  },
+  {
+    "id": 64,
+    "nome": "Kadabra",
+    "tipo": ["Psíquico"],
+    "estatisticas_base": {
+      "hp": 40,
+      "ataque": 35,
+      "defesa": 30,
+      "ataque_especial": 120,
+      "defesa_especial": 70,
+      "velocidade": 105
+    },
+    "perfil": {
+      "altura": "1.3 m",
+      "peso": "56.5 kg",
+      "habilidades": ["Synchronize", "Inner Focus"]
+    },
+    "evolucao": "Alakazam"
+  },
+  {
+    "id": 79,
+    "nome": "Slowpoke",
+    "tipo": ["Água", "Psíquico"],
+    "estatisticas_base": {
+      "hp": 90,
+      "ataque": 65,
+      "defesa": 65,
+      "ataque_especial": 40,
+      "defesa_especial": 40,
+      "velocidade": 15
+    },
+    "perfil": {
+      "altura": "1.2 m",
+      "peso": "36.0 kg",
+      "habilidades": ["Oblivious", "Own Tempo"]
+    },
+    "evolucao": "Slowbro"
+  },
+  {
+    "id": 81,
+    "nome": "Magnemite",
+    "tipo": ["Elétrico", "Aço"],
+    "estatisticas_base": {
+      "hp": 25,
+      "ataque": 35,
+      "defesa": 70,
+      "ataque_especial": 95,
+      "defesa_especial": 55,
+      "velocidade": 45
+    },
+    "perfil": {
+      "altura": "0.3 m",
+      "peso": "6.0 kg",
+      "habilidades": ["Magnet Pull", "Sturdy"]
+    },
+    "evolucao": "Magneton"
+  },
+  {
+    "id": 95,
+    "nome": "Onix",
+    "tipo": ["Pedra", "Terrestre"],
+    "estatisticas_base": {
+      "hp": 35,
+      "ataque": 45,
+      "defesa": 160,
+      "ataque_especial": 30,
+      "defesa_especial": 45,
+      "velocidade": 70
+    },
+    "perfil": {
+      "altura": "8.8 m",
+      "peso": "210.0 kg",
+      "habilidades": ["Rock Head", "Sturdy"]
+    },
+    "evolucao": "Steelix"
+  },
+  {
+    "id": 104,
+    "nome": "Cubone",
+    "tipo": ["Terrestre"],
+    "estatisticas_base": {
+      "hp": 50,
+      "ataque": 50,
+      "defesa": 95,
+      "ataque_especial": 40,
+      "defesa_especial": 50,
+      "velocidade": 35
+    },
+    "perfil": {
+      "altura": "0.4 m",
+      "peso": "6.5 kg",
+      "habilidades": ["Rock Head", "Lightning Rod"]
+    },
+    "evolucao": "Marowak"
+  },
+  {
+    "id": 109,
+    "nome": "Koffing",
+    "tipo": ["Venenoso"],
+    "estatisticas_base": {
+      "hp": 40,
+      "ataque": 65,
+      "defesa": 95,
+      "ataque_especial": 60,
+      "defesa_especial": 45,
+      "velocidade": 35
+    },
+    "perfil": {
+      "altura": "0.6 m",
+      "peso": "1.0 kg",
+      "habilidades": ["Levitate", "Neutralizing Gas"]
+    },
+    "evolucao": "Weezing"
+  },
+  {
+    "id": 129,
+    "nome": "Magikarp",
+    "tipo": ["Água"],
+    "estatisticas_base": {
+      "hp": 20,
+      "ataque": 10,
+      "defesa": 55,
+      "ataque_especial": 15,
+      "defesa_especial": 20,
+      "velocidade": 80
+    },
+    "perfil": {
+      "altura": "0.9 m",
+      "peso": "10.0 kg",
+      "habilidades": ["Swift Swim", "Rattled"]
+    },
+    "evolucao": "Gyarados"
+  },
+  {
+    "id": 132,
+    "nome": "Ditto",
+    "tipo": ["Normal"],
+    "estatisticas_base": {
+      "hp": 48,
+      "ataque": 48,
+      "defesa": 48,
+      "ataque_especial": 48,
+      "defesa_especial": 48,
+      "velocidade": 48
+    },
+    "perfil": {
+      "altura": "0.3 m",
+      "peso": "4.0 kg",
+      "habilidades": ["Limber", "Imposter"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 142,
+    "nome": "Aerodactyl",
+    "tipo": ["Pedra", "Voador"],
+    "estatisticas_base": {
+      "hp": 80,
+      "ataque": 105,
+      "defesa": 65,
+      "ataque_especial": 60,
+      "defesa_especial": 75,
+      "velocidade": 130
+    },
+    "perfil": {
+      "altura": "1.8 m",
+      "peso": "59.0 kg",
+      "habilidades": ["Rock Head", "Pressure"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 151,
+    "nome": "Mew",
+    "tipo": ["Psíquico"],
+    "estatisticas_base": {
+      "hp": 100,
+      "ataque": 100,
+      "defesa": 100,
+      "ataque_especial": 100,
+      "defesa_especial": 100,
+      "velocidade": 100
+    },
+    "perfil": {
+      "altura": "0.4 m",
+      "peso": "4.0 kg",
+      "habilidades": ["Synchronize"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 152,
+    "nome": "Chikorita",
+    "tipo": ["Grama"],
+    "estatisticas_base": {
+      "hp": 45,
+      "ataque": 49,
+      "defesa": 65,
+      "ataque_especial": 49,
+      "defesa_especial": 65,
+      "velocidade": 45
+    },
+    "perfil": {
+      "altura": "0.9 m",
+      "peso": "6.4 kg",
+      "habilidades": ["Overgrow", "Leaf Guard"]
+    },
+    "evolucao": "Bayleef"
+  },
+  {
+    "id": 155,
+    "nome": "Cyndaquil",
+    "tipo": ["Fogo"],
+    "estatisticas_base": {
+      "hp": 39,
+      "ataque": 52,
+      "defesa": 43,
+      "ataque_especial": 60,
+      "defesa_especial": 50,
+      "velocidade": 65
+    },
+    "perfil": {
+      "altura": "0.5 m",
+      "peso": "7.9 kg",
+      "habilidades": ["Blaze", "Flash Fire"]
+    },
+    "evolucao": "Quilava"
+  },
+  {
+    "id": 158,
+    "nome": "Totodile",
+    "tipo": ["Água"],
+    "estatisticas_base": {
+      "hp": 50,
+      "ataque": 65,
+      "defesa": 64,
+      "ataque_especial": 44,
+      "defesa_especial": 48,
+      "velocidade": 43
+    },
+    "perfil": {
+      "altura": "0.6 m",
+      "peso": "9.5 kg",
+      "habilidades": ["Torrent", "Sheer Force"]
+    },
+    "evolucao": "Croconaw"
+  },
+  {
+    "id": 175,
+    "nome": "Togepi",
+    "tipo": ["Fada"],
+    "estatisticas_base": {
+      "hp": 35,
+      "ataque": 20,
+      "defesa": 65,
+      "ataque_especial": 40,
+      "defesa_especial": 65,
+      "velocidade": 20
+    },
+    "perfil": {
+      "altura": "0.3 m",
+      "peso": "1.5 kg",
+      "habilidades": ["Hustle", "Serene Grace"]
+    },
+    "evolucao": "Togetic"
+  },
+  {
+    "id": 196,
+    "nome": "Espeon",
+    "tipo": ["Psíquico"],
+    "estatisticas_base": {
+      "hp": 65,
+      "ataque": 65,
+      "defesa": 60,
+      "ataque_especial": 130,
+      "defesa_especial": 95,
+      "velocidade": 110
+    },
+    "perfil": {
+      "altura": "0.9 m",
+      "peso": "26.5 kg",
+      "habilidades": ["Synchronize", "Magic Bounce"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 214,
+    "nome": "Heracross",
+    "tipo": ["Inseto", "Lutador"],
+    "estatisticas_base": {
+      "hp": 80,
+      "ataque": 125,
+      "defesa": 75,
+      "ataque_especial": 40,
+      "defesa_especial": 95,
+      "velocidade": 85
+    },
+    "perfil": {
+      "altura": "1.5 m",
+      "peso": "54.0 kg",
+      "habilidades": ["Swarm", "Guts"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 227,
+    "nome": "Skarmory",
+    "tipo": ["Aço", "Voador"],
+    "estatisticas_base": {
+      "hp": 65,
+      "ataque": 80,
+      "defesa": 140,
+      "ataque_especial": 40,
+      "defesa_especial": 70,
+      "velocidade": 70
+    },
+    "perfil": {
+      "altura": "1.7 m",
+      "peso": "50.5 kg",
+      "habilidades": ["Keen Eye", "Sturdy"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 252,
+    "nome": "Treecko",
+    "tipo": ["Grama"],
+    "estatisticas_base": {
+      "hp": 40,
+      "ataque": 45,
+      "defesa": 35,
+      "ataque_especial": 65,
+      "defesa_especial": 55,
+      "velocidade": 70
+    },
+    "perfil": {
+      "altura": "0.5 m",
+      "peso": "5.0 kg",
+      "habilidades": ["Overgrow", "Unburden"]
+    },
+    "evolucao": "Grovyle"
+  },
+  {
+    "id": 255,
+    "nome": "Torchic",
+    "tipo": ["Fogo"],
+    "estatisticas_base": {
+      "hp": 45,
+      "ataque": 60,
+      "defesa": 40,
+      "ataque_especial": 70,
+      "defesa_especial": 50,
+      "velocidade": 45
+    },
+    "perfil": {
+      "altura": "0.4 m",
+      "peso": "2.5 kg",
+      "habilidades": ["Blaze", "Speed Boost"]
+    },
+    "evolucao": "Combusken"
+  },
+  {
+    "id": 258,
+    "nome": "Mudkip",
+    "tipo": ["Água"],
+    "estatisticas_base": {
+      "hp": 50,
+      "ataque": 70,
+      "defesa": 50,
+      "ataque_especial": 50,
+      "defesa_especial": 50,
+      "velocidade": 40
+    },
+    "perfil": {
+      "altura": "0.4 m",
+      "peso": "7.6 kg",
+      "habilidades": ["Torrent", "Damp"]
+    },
+    "evolucao": "Marshtomp"
+  },
+  {
+    "id": 373,
+    "nome": "Salamence",
+    "tipo": ["Dragão", "Voador"],
+    "estatisticas_base": {
+      "hp": 95,
+      "ataque": 135,
+      "defesa": 80,
+      "ataque_especial": 110,
+      "defesa_especial": 80,
+      "velocidade": 100
+    },
+    "perfil": {
+      "altura": "1.5 m",
+      "peso": "102.6 kg",
+      "habilidades": ["Intimidate", "Moxie"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 376,
+    "nome": "Metagross",
+    "tipo": ["Aço", "Psíquico"],
+    "estatisticas_base": {
+      "hp": 80,
+      "ataque": 135,
+      "defesa": 130,
+      "ataque_especial": 95,
+      "defesa_especial": 90,
+      "velocidade": 70
+    },
+    "perfil": {
+      "altura": "1.6 m",
+      "peso": "550.0 kg",
+      "habilidades": ["Clear Body", "Light Metal"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 390,
+    "nome": "Chimchar",
+    "tipo": ["Fogo"],
+    "estatisticas_base": {
+      "hp": 44,
+      "ataque": 58,
+      "defesa": 44,
+      "ataque_especial": 58,
+      "defesa_especial": 44,
+      "velocidade": 61
+    },
+    "perfil": {
+      "altura": "0.5 m",
+      "peso": "6.2 kg",
+      "habilidades": ["Blaze", "Iron Fist"]
+    },
+    "evolucao": "Monferno"
+  },
+  {
+    "id": 393,
+    "nome": "Piplup",
+    "tipo": ["Água"],
+    "estatisticas_base": {
+      "hp": 53,
+      "ataque": 51,
+      "defesa": 53,
+      "ataque_especial": 61,
+      "defesa_especial": 56,
+      "velocidade": 40
+    },
+    "perfil": {
+      "altura": "0.4 m",
+      "peso": "5.2 kg",
+      "habilidades": ["Torrent", "Defiant"]
+    },
+    "evolucao": "Prinplup"
+  },
+  {
+    "id": 470,
+    "nome": "Leafeon",
+    "tipo": ["Grama"],
+    "estatisticas_base": {
+      "hp": 65,
+      "ataque": 110,
+      "defesa": 130,
+      "ataque_especial": 60,
+      "defesa_especial": 65,
+      "velocidade": 95
+    },
+    "perfil": {
+      "altura": "1.0 m",
+      "peso": "25.5 kg",
+      "habilidades": ["Leaf Guard", "Chlorophyll"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 31,
+    "nome": "Nidoqueen",
+    "tipo": ["Venenoso", "Terrestre"],
+    "estatisticas_base": {
+      "hp": 90,
+      "ataque": 92,
+      "defesa": 87,
+      "ataque_especial": 75,
+      "defesa_especial": 85,
+      "velocidade": 76
+    },
+    "perfil": {
+      "altura": "1.3 m",
+      "peso": "60.0 kg",
+      "habilidades": ["Poison Point", "Rivalry"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 11,
+    "nome": "Metapod",
+    "tipo": ["Inseto"],
+    "estatisticas_base": {
+      "hp": 50,
+      "ataque": 20,
+      "defesa": 55,
+      "ataque_especial": 25,
+      "defesa_especial": 25,
+      "velocidade": 30
+    },
+    "perfil": {
+      "altura": "0.7 m",
+      "peso": "9.9 kg",
+      "habilidades": ["Shed Skin"]
+    },
+    "evolucao": "Butterfree"
+  },
+  {
+    "id": 14,
+    "nome": "Kakuna",
+    "tipo": ["Inseto", "Venenoso"],
+    "estatisticas_base": {
+      "hp": 45,
+      "ataque": 25,
+      "defesa": 50,
+      "ataque_especial": 25,
+      "defesa_especial": 25,
+      "velocidade": 35
+    },
+    "perfil": {
+      "altura": "0.6 m",
+      "peso": "10.0 kg",
+      "habilidades": ["Shed Skin"]
+    },
+    "evolucao": "Beedrill"
+  },
+  {
+    "id": 26,
+    "nome": "Raichu",
+    "tipo": ["Elétrico"],
+    "estatisticas_base": {
+      "hp": 60,
+      "ataque": 90,
+      "defesa": 55,
+      "ataque_especial": 90,
+      "defesa_especial": 80,
+      "velocidade": 110
+    },
+    "perfil": {
+      "altura": "0.8 m",
+      "peso": "30.0 kg",
+      "habilidades": ["Static", "Lightning Rod"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 51,
+    "nome": "Dugtrio",
+    "tipo": ["Terrestre"],
+    "estatisticas_base": {
+      "hp": 35,
+      "ataque": 100,
+      "defesa": 50,
+      "ataque_especial": 50,
+      "defesa_especial": 70,
+      "velocidade": 120
+    },
+    "perfil": {
+      "altura": "0.7 m",
+      "peso": "33.3 kg",
+      "habilidades": ["Sand Veil", "Arena Trap"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 62,
+    "nome": "Poliwrath",
+    "tipo": ["Água", "Lutador"],
+    "estatisticas_base": {
+      "hp": 90,
+      "ataque": 95,
+      "defesa": 95,
+      "ataque_especial": 70,
+      "defesa_especial": 90,
+      "velocidade": 70
+    },
+    "perfil": {
+      "altura": "1.3 m",
+      "peso": "54.0 kg",
+      "habilidades": ["Water Absorb", "Damp"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 112,
+    "nome": "Rhydon",
+    "tipo": ["Terrestre", "Pedra"],
+    "estatisticas_base": {
+      "hp": 105,
+      "ataque": 130,
+      "defesa": 120,
+      "ataque_especial": 45,
+      "defesa_especial": 45,
+      "velocidade": 40
+    },
+    "perfil": {
+      "altura": "1.9 m",
+      "peso": "120.0 kg",
+      "habilidades": ["Lightning Rod", "Rock Head"]
+    },
+    "evolucao": "Rhyperior"
+  },
+  {
+    "id": 137,
+    "nome": "Porygon",
+    "tipo": ["Normal"],
+    "estatisticas_base": {
+      "hp": 65,
+      "ataque": 60,
+      "defesa": 70,
+      "ataque_especial": 85,
+      "defesa_especial": 75,
+      "velocidade": 40
+    },
+    "perfil": {
+      "altura": "0.8 m",
+      "peso": "36.5 kg",
+      "habilidades": ["Trace", "Download"]
+    },
+    "evolucao": "Porygon2"
+  },
+  {
+    "id": 138,
+    "nome": "Omanyte",
+    "tipo": ["Pedra", "Água"],
+    "estatisticas_base": {
+      "hp": 35,
+      "ataque": 40,
+      "defesa": 100,
+      "ataque_especial": 90,
+      "defesa_especial": 55,
+      "velocidade": 35
+    },
+    "perfil": {
+      "altura": "0.4 m",
+      "peso": "7.5 kg",
+      "habilidades": ["Swift Swim", "Shell Armor"]
+    },
+    "evolucao": "Omastar"
+  },
+  {
+    "id": 140,
+    "nome": "Kabuto",
+    "tipo": ["Pedra", "Água"],
+    "estatisticas_base": {
+      "hp": 30,
+      "ataque": 80,
+      "defesa": 90,
+      "ataque_especial": 55,
+      "defesa_especial": 45,
+      "velocidade": 55
+    },
+    "perfil": {
+      "altura": "0.5 m",
+      "peso": "11.5 kg",
+      "habilidades": ["Swift Swim", "Battle Armor"]
+    },
+    "evolucao": "Kabutops"
+  },
+  {
+    "id": 154,
+    "nome": "Meganium",
+    "tipo": ["Grama"],
+    "estatisticas_base": {
+      "hp": 80,
+      "ataque": 82,
+      "defesa": 100,
+      "ataque_especial": 83,
+      "defesa_especial": 100,
+      "velocidade": 80
+    },
+    "perfil": {
+      "altura": "1.7 m",
+      "peso": "100.5 kg",
+      "habilidades": ["Overgrow", "Leaf Guard"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 157,
+    "nome": "Typhlosion",
+    "tipo": ["Fogo"],
+    "estatisticas_base": {
+      "hp": 78,
+      "ataque": 84,
+      "defesa": 78,
+      "ataque_especial": 109,
+      "defesa_especial": 85,
+      "velocidade": 100
+    },
+    "perfil": {
+      "altura": "1.7 m",
+      "peso": "79.5 kg",
+      "habilidades": ["Blaze", "Flash Fire"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 160,
+    "nome": "Feraligatr",
+    "tipo": ["Água"],
+    "estatisticas_base": {
+      "hp": 85,
+      "ataque": 105,
+      "defesa": 100,
+      "ataque_especial": 79,
+      "defesa_especial": 83,
+      "velocidade": 78
+    },
+    "perfil": {
+      "altura": "2.3 m",
+      "peso": "88.8 kg",
+      "habilidades": ["Torrent", "Sheer Force"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 181,
+    "nome": "Ampharos",
+    "tipo": ["Elétrico"],
+    "estatisticas_base": {
+      "hp": 90,
+      "ataque": 75,
+      "defesa": 85,
+      "ataque_especial": 115,
+      "defesa_especial": 90,
+      "velocidade": 55
+    },
+    "perfil": {
+      "altura": "1.4 m",
+      "peso": "61.5 kg",
+      "habilidades": ["Static", "Plus"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 208,
+    "nome": "Steelix",
+    "tipo": ["Aço", "Terrestre"],
+    "estatisticas_base": {
+      "hp": 75,
+      "ataque": 85,
+      "defesa": 200,
+      "ataque_especial": 55,
+      "defesa_especial": 65,
+      "velocidade": 30
+    },
+    "perfil": {
+      "altura": "9.2 m",
+      "peso": "400.0 kg",
+      "habilidades": ["Rock Head", "Sturdy"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 229,
+    "nome": "Houndoom",
+    "tipo": ["Sombrio", "Fogo"],
+    "estatisticas_base": {
+      "hp": 75,
+      "ataque": 90,
+      "defesa": 50,
+      "ataque_especial": 110,
+      "defesa_especial": 80,
+      "velocidade": 95
+    },
+    "perfil": {
+      "altura": "1.4 m",
+      "peso": "35.0 kg",
+      "habilidades": ["Early Bird", "Flash Fire"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 230,
+    "nome": "Kingdra",
+    "tipo": ["Água", "Dragão"],
+    "estatisticas_base": {
+      "hp": 75,
+      "ataque": 95,
+      "defesa": 95,
+      "ataque_especial": 95,
+      "defesa_especial": 95,
+      "velocidade": 85
+    },
+    "perfil": {
+      "altura": "1.8 m",
+      "peso": "152.0 kg",
+      "habilidades": ["Swift Swim", "Sniper"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 254,
+    "nome": "Sceptile",
+    "tipo": ["Grama"],
+    "estatisticas_base": {
+      "hp": 70,
+      "ataque": 85,
+      "defesa": 65,
+      "ataque_especial": 105,
+      "defesa_especial": 85,
+      "velocidade": 120
+    },
+    "perfil": {
+      "altura": "1.7 m",
+      "peso": "52.2 kg",
+      "habilidades": ["Overgrow", "Unburden"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 257,
+    "nome": "Blaziken",
+    "tipo": ["Fogo", "Lutador"],
+    "estatisticas_base": {
+      "hp": 80,
+      "ataque": 120,
+      "defesa": 70,
+      "ataque_especial": 110,
+      "defesa_especial": 70,
+      "velocidade": 80
+    },
+    "perfil": {
+      "altura": "1.9 m",
+      "peso": "52.0 kg",
+      "habilidades": ["Blaze", "Speed Boost"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 260,
+    "nome": "Swampert",
+    "tipo": ["Água", "Terrestre"],
+    "estatisticas_base": {
+      "hp": 100,
+      "ataque": 110,
+      "defesa": 90,
+      "ataque_especial": 85,
+      "defesa_especial": 90,
+      "velocidade": 60
+    },
+    "perfil": {
+      "altura": "1.5 m",
+      "peso": "81.9 kg",
+      "habilidades": ["Torrent", "Damp"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 302,
+    "nome": "Sableye",
+    "tipo": ["Sombrio", "Fantasma"],
+    "estatisticas_base": {
+      "hp": 50,
+      "ataque": 75,
+      "defesa": 75,
+      "ataque_especial": 65,
+      "defesa_especial": 65,
+      "velocidade": 50
+    },
+    "perfil": {
+      "altura": "0.5 m",
+      "peso": "11.0 kg",
+      "habilidades": ["Keen Eye", "Stall"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 330,
+    "nome": "Flygon",
+    "tipo": ["Terrestre", "Dragão"],
+    "estatisticas_base": {
+      "hp": 80,
+      "ataque": 100,
+      "defesa": 80,
+      "ataque_especial": 80,
+      "defesa_especial": 80,
+      "velocidade": 100
+    },
+    "perfil": {
+      "altura": "2.0 m",
+      "peso": "82.0 kg",
+      "habilidades": ["Levitate"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 350,
+    "nome": "Milotic",
+    "tipo": ["Água"],
+    "estatisticas_base": {
+      "hp": 95,
+      "ataque": 60,
+      "defesa": 79,
+      "ataque_especial": 100,
+      "defesa_especial": 125,
+      "velocidade": 81
+    },
+    "perfil": {
+      "altura": "6.2 m",
+      "peso": "162.0 kg",
+      "habilidades": ["Marvel Scale", "Competitive"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 359,
+    "nome": "Absol",
+    "tipo": ["Sombrio"],
+    "estatisticas_base": {
+      "hp": 65,
+      "ataque": 130,
+      "defesa": 60,
+      "ataque_especial": 75,
+      "defesa_especial": 60,
+      "velocidade": 75
+    },
+    "perfil": {
+      "altura": "1.2 m",
+      "peso": "47.0 kg",
+      "habilidades": ["Pressure", "Super Luck"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 389,
+    "nome": "Torterra",
+    "tipo": ["Grama", "Terrestre"],
+    "estatisticas_base": {
+      "hp": 95,
+      "ataque": 109,
+      "defesa": 105,
+      "ataque_especial": 75,
+      "defesa_especial": 85,
+      "velocidade": 56
+    },
+    "perfil": {
+      "altura": "2.2 m",
+      "peso": "310.0 kg",
+      "habilidades": ["Overgrow", "Shell Armor"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 392,
+    "nome": "Infernape",
+    "tipo": ["Fogo", "Lutador"],
+    "estatisticas_base": {
+      "hp": 76,
+      "ataque": 104,
+      "defesa": 71,
+      "ataque_especial": 104,
+      "defesa_especial": 71,
+      "velocidade": 108
+    },
+    "perfil": {
+      "altura": "1.2 m",
+      "peso": "55.0 kg",
+      "habilidades": ["Blaze", "Iron Fist"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 395,
+    "nome": "Empoleon",
+    "tipo": ["Água", "Aço"],
+    "estatisticas_base": {
+      "hp": 84,
+      "ataque": 86,
+      "defesa": 88,
+      "ataque_especial": 111,
+      "defesa_especial": 101,
+      "velocidade": 60
+    },
+    "perfil": {
+      "altura": "1.7 m",
+      "peso": "84.5 kg",
+      "habilidades": ["Torrent", "Defiant"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 407,
+    "nome": "Roserade",
+    "tipo": ["Grama", "Venenoso"],
+    "estatisticas_base": {
+      "hp": 60,
+      "ataque": 70,
+      "defesa": 65,
+      "ataque_especial": 125,
+      "defesa_especial": 105,
+      "velocidade": 90
+    },
+    "perfil": {
+      "altura": "0.9 m",
+      "peso": "14.5 kg",
+      "habilidades": ["Natural Cure", "Poison Point"]
+    },
+    "evolucao": "N/A"
+  },
+  {
+    "id": 447,
+    "nome": "Riolu",
+    "tipo": ["Lutador"],
+    "estatisticas_base": {
+      "hp": 40,
+      "ataque": 70,
+      "defesa": 40,
+      "ataque_especial": 35,
+      "defesa_especial": 40,
+      "velocidade": 60
+    },
+    "perfil": {
+      "altura": "0.7 m",
+      "peso": "20.2 kg",
+      "habilidades": ["Steadfast", "Inner Focus"]
+    },
+    "evolucao": "Lucario"
+  },
+  {
+    "id": 471,
+    "nome": "Glaceon",
+    "tipo": ["Gelo"],
+    "estatisticas_base": {
+      "hp": 65,
+      "ataque": 60,
+      "defesa": 110,
+      "ataque_especial": 130,
+      "defesa_especial": 95,
+      "velocidade": 65
+    },
+    "perfil": {
+      "altura": "0.8 m",
+      "peso": "25.9 kg",
+      "habilidades": ["Snow Cloak", "Ice Body"]
+    },
+    "evolucao": "N/A"
   }  
 ]
