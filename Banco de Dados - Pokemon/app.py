@@ -14,17 +14,16 @@ class PokedexApp(ctk.CTk):
         super().__init__()
 
         self.title("Sistema de Gerenciamento Pokémon")
-        self.geometry("1100x700")
+        self.geometry("1100x850") # Aumentado para acomodar mais campos
         
         self.dados_pokemon = self.carregar_banco()
-        self.pokemon_em_edicao = None  # Armazena o ID do pokemon que está sendo editado
+        self.pokemon_em_edicao = None
 
-        # Layout principal
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
         # --- Sidebar ---
-        self.sidebar = ctk.CTkFrame(self, width=300, corner_radius=0)
+        self.sidebar = ctk.CTkScrollableFrame(self, width=300, corner_radius=0)
         self.sidebar.grid(row=0, column=0, sticky="nsew")
         
         self.lbl_modo = ctk.CTkLabel(self.sidebar, text="CADASTRO", font=ctk.CTkFont(size=20, weight="bold"), text_color="#32CD32")
@@ -32,11 +31,19 @@ class PokedexApp(ctk.CTk):
         
         self.ent_nome = self.criar_campo("Nome do Pokémon")
         self.ent_tipo = self.criar_campo("Tipos (separados por vírgula)")
+        
+        # Status Base
         self.ent_hp = self.criar_campo("HP Base")
         self.ent_ataque = self.criar_campo("Ataque Base")
         self.ent_defesa = self.criar_campo("Defesa Base")
+        self.ent_atk_esp = self.criar_campo("Ataque Especial")
+        self.ent_def_esp = self.criar_campo("Defesa Especial")
+        self.ent_velocidade = self.criar_campo("Velocidade")
+        
+        # Perfil
         self.ent_altura = self.criar_campo("Altura (ex: 0.7 m)")
         self.ent_peso = self.criar_campo("Peso (ex: 6.9 kg)")
+        self.ent_habilidades = self.criar_campo("Habilidades (vírgula)")
         self.ent_evolucao = self.criar_campo("Próxima Evolução")
 
         self.btn_salvar = ctk.CTkButton(self.sidebar, text="Salvar Pokémon", fg_color="#32CD32", hover_color="#228B22", command=self.processar_salvamento)
@@ -76,7 +83,6 @@ class PokedexApp(ctk.CTk):
         with open(DB_FILE, 'w', encoding='utf-8') as f:
             json.dump(self.dados_pokemon, f, indent=2, ensure_ascii=False)
 
-    # --- Lógica de CRUD Atualizada ---
     def processar_salvamento(self):
         try:
             novo_dado = {
@@ -85,24 +91,26 @@ class PokedexApp(ctk.CTk):
                 "estatisticas_base": {
                     "hp": int(self.ent_hp.get()),
                     "ataque": int(self.ent_ataque.get()),
-                    "defesa": int(self.ent_defesa.get())
+                    "defesa": int(self.ent_defesa.get()),
+                    "ataque_especial": int(self.ent_atk_esp.get()),
+                    "defesa_especial": int(self.ent_def_esp.get()),
+                    "velocidade": int(self.ent_velocidade.get())
                 },
                 "perfil": {
                     "altura": self.ent_altura.get(),
-                    "peso": self.ent_peso.get()
+                    "peso": self.ent_peso.get(),
+                    "habilidades": [h.strip() for h in self.ent_habilidades.get().split(",")]
                 },
                 "evolucao": self.ent_evolucao.get()
             }
 
             if self.pokemon_em_edicao is not None:
-                # Lógica de Update
                 for i, p in enumerate(self.dados_pokemon):
                     if p["id"] == self.pokemon_em_edicao:
                         novo_dado["id"] = self.pokemon_em_edicao
                         self.dados_pokemon[i] = novo_dado
                         break
             else:
-                # Lógica de Create
                 novo_dado["id"] = max([p.get("id", 0) for p in self.dados_pokemon], default=0) + 1
                 self.dados_pokemon.append(novo_dado)
 
@@ -110,29 +118,28 @@ class PokedexApp(ctk.CTk):
             self.atualizar_visualizacao()
             self.limpar_campos()
         except ValueError:
-            messagebox.showerror("Erro", "Valores numéricos inválidos nos status.")
+            messagebox.showerror("Erro", "Certifique-se de que todos os campos de status são números.")
 
     def carregar_para_edicao(self, p):
+        self.limpar_campos()
         self.pokemon_em_edicao = p["id"]
         self.lbl_modo.configure(text="EDIÇÃO", text_color="#68006B")
         self.btn_salvar.configure(text="Atualizar Pokémon", fg_color="#00035F", hover_color="#00CED1")
         self.btn_cancelar.configure(state="normal")
 
-        # Preencher campos
-        self.ent_nome.delete(0, 'end'); self.ent_nome.insert(0, p["nome"])
-        self.ent_tipo.delete(0, 'end'); self.ent_tipo.insert(0, ", ".join(p["tipo"]))
-        self.ent_hp.delete(0, 'end'); self.ent_hp.insert(0, p["estatisticas_base"]["hp"])
-        self.ent_ataque.delete(0, 'end'); self.ent_ataque.insert(0, p["estatisticas_base"]["ataque"])
-        self.ent_defesa.delete(0, 'end'); self.ent_defesa.insert(0, p["estatisticas_base"]["defesa"])
-        self.ent_altura.delete(0, 'end'); self.ent_altura.insert(0, p["perfil"]["altura"])
-        self.ent_peso.delete(0, 'end'); self.ent_peso.insert(0, p["perfil"]["peso"])
-        self.ent_evolucao.delete(0, 'end'); self.ent_evolucao.insert(0, p.get("evolucao", ""))
-
-    def deletar_pokemon(self, id_poke):
-        if messagebox.askyesno("Confirmar", "Deseja excluir este Pokémon?"):
-            self.dados_pokemon = [p for p in self.dados_pokemon if p["id"] != id_poke]
-            self.salvar_banco()
-            self.atualizar_visualizacao()
+        # Preenchimento Completo
+        self.ent_nome.insert(0, p["nome"])
+        self.ent_tipo.insert(0, ", ".join(p["tipo"]))
+        self.ent_hp.insert(0, p["estatisticas_base"]["hp"])
+        self.ent_ataque.insert(0, p["estatisticas_base"]["ataque"])
+        self.ent_defesa.insert(0, p["estatisticas_base"]["defesa"])
+        self.ent_atk_esp.insert(0, p["estatisticas_base"].get("ataque_especial", 0))
+        self.ent_def_esp.insert(0, p["estatisticas_base"].get("defesa_especial", 0))
+        self.ent_velocidade.insert(0, p["estatisticas_base"].get("velocidade", 0))
+        self.ent_altura.insert(0, p["perfil"]["altura"])
+        self.ent_peso.insert(0, p["perfil"]["peso"])
+        self.ent_habilidades.insert(0, ", ".join(p["perfil"].get("habilidades", [])))
+        self.ent_evolucao.insert(0, p.get("evolucao", ""))
 
     def criar_card(self, p):
         card = ctk.CTkFrame(self.scroll_cards, border_width=2, border_color="#00FFFF", fg_color="white")
@@ -143,15 +150,31 @@ class PokedexApp(ctk.CTk):
         
         ctk.CTkLabel(header, text=p["nome"].upper(), font=ctk.CTkFont(size=16, weight="bold"), text_color="#32CD32").pack(side="left", padx=10)
         
-        # Botões de Ação
         btn_del = ctk.CTkButton(header, text="X", width=30, height=20, fg_color="#FF4500", command=lambda: self.deletar_pokemon(p["id"]))
         btn_del.pack(side="right", padx=5, pady=5)
         
         btn_edit = ctk.CTkButton(header, text="✏️", width=30, height=20, fg_color="#00FFFF", text_color="black", command=lambda: self.carregar_para_edicao(p))
         btn_edit.pack(side="right", padx=5, pady=5)
 
-        info = f"Tipos: {' / '.join(p['tipo'])}\nStatus: HP: {p['estatisticas_base']['hp']} | ATK: {p['estatisticas_base']['ataque']} | DEF: {p['estatisticas_base']['defesa']}\nEvolução: {p.get('evolucao', 'N/A')}"
-        ctk.CTkLabel(card, text=info, justify="left").pack(padx=10, pady=10, anchor="w")
+        # Montagem dos dados detalhados
+        eb = p['estatisticas_base']
+        pf = p['perfil']
+        
+        linha1 = f"Tipos: {' / '.join(p['tipo'])}"
+        linha2 = f"Status: HP: {eb['hp']} | ATK: {eb['ataque']} | DEF: {eb['defesa']} | SATK: {eb.get('ataque_especial', '-')} | SDEF: {eb.get('defesa_especial', '-')} | SPD: {eb.get('velocidade', '-')}"
+        linha3 = f"Perfil: Altura: {pf['altura']} | Peso: {pf['peso']}"
+        linha4 = f"Habilidades: {', '.join(pf.get('habilidades', ['N/A']))}"
+        linha5 = f"Evolução: {p.get('evolucao', 'N/A')}"
+        
+        info_completa = f"{linha1}\n{linha2}\n{linha3}\n{linha4}\n{linha5}"
+        
+        ctk.CTkLabel(card, text=info_completa, justify="left", font=("Consolas", 12)).pack(padx=10, pady=10, anchor="w")
+
+    def deletar_pokemon(self, id_poke):
+        if messagebox.askyesno("Confirmar", "Deseja excluir este Pokémon?"):
+            self.dados_pokemon = [p for p in self.dados_pokemon if p["id"] != id_poke]
+            self.salvar_banco()
+            self.atualizar_visualizacao()
 
     def atualizar_visualizacao(self):
         for w in self.scroll_cards.winfo_children(): w.destroy()
@@ -165,8 +188,10 @@ class PokedexApp(ctk.CTk):
         self.lbl_modo.configure(text="CADASTRO", text_color="#32CD32")
         self.btn_salvar.configure(text="Salvar Pokémon", fg_color="#32CD32")
         self.btn_cancelar.configure(state="disabled")
-        for e in [self.ent_nome, self.ent_tipo, self.ent_hp, self.ent_ataque, self.ent_defesa, self.ent_altura, self.ent_peso, self.ent_evolucao]:
-            e.delete(0, 'end')
+        # Limpa todos os campos dinamicamente
+        for widget in self.sidebar.winfo_children():
+            if isinstance(widget, ctk.CTkEntry):
+                widget.delete(0, 'end')
 
 if __name__ == "__main__":
     PokedexApp().mainloop()
